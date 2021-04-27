@@ -32,12 +32,16 @@ if (etaPasseggero < 18) {
     
     // sconto se il passeggero soddisfa i requisiti
     prezzoFinale = prezzoBiglietto - (prezzoBiglietto * 0.20);
+
     // debug
     console.log( "sconto 20% " + prezzoFinale);
+
     // sconto 20%
     var sconto = prezzoBiglietto * 0.20;
+
     // sconto 20% in h2
     document.getElementById("sconto").innerHTML = sconto.toFixed(2) + " €";
+
     // prezzo finale scontato
     document.getElementById("prezzo-finale").innerHTML = prezzoFinale.toFixed(2) + " €";
 
@@ -45,14 +49,20 @@ if (etaPasseggero < 18) {
 
     // sconto se il passeggero soddisfa i requisiti
     prezzoFinale = prezzoBiglietto - (prezzoBiglietto * 0.40);
+
     // debug
     console.log("sconto 40% " + prezzoFinale);
+
     // sconto 40%
     var sconto = prezzoBiglietto * 0.40;
+
+    // sconto 40% in h2
     document.getElementById("sconto").innerHTML = sconto.toFixed(2) + " €";
+
      // prezzo finale scontato
     document.getElementById("prezzo-finale").innerHTML = prezzoFinale.toFixed(2) + " €";
 
+    // nessuno sconto
 } else {
 
     // prezzo rimane invariato
@@ -60,6 +70,7 @@ if (etaPasseggero < 18) {
 
     // nessuno sconto applicato
     document.getElementById("sconto").innerHTML = "nessuno sconto";
+    
     // prezzo finale non scontato
     document.getElementById("prezzo-finale").innerHTML = prezzoFinale.toFixed(2) + " €";
 }
