@@ -59,7 +59,7 @@ if (etaPasseggero < 18) {
     // sconto 40% in h2
     document.getElementById("sconto").innerHTML = sconto.toFixed(2) + " €";
 
-     // prezzo finale scontato
+    // prezzo finale scontato
     document.getElementById("prezzo-finale").innerHTML = prezzoFinale.toFixed(2) + " €";
 
     // nessuno sconto
@@ -70,7 +70,7 @@ if (etaPasseggero < 18) {
 
     // nessuno sconto applicato
     document.getElementById("sconto").innerHTML = "nessuno sconto";
-    
+
     // prezzo finale non scontato
     document.getElementById("prezzo-finale").innerHTML = prezzoFinale.toFixed(2) + " €";
 }
