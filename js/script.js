@@ -28,6 +28,7 @@ console.log("prezzo " + prezzoBiglietto);
 document.getElementById("prezzo-iniziale").innerHTML = prezzoBiglietto.toFixed(2) + " €";
 
 // sconti biglietto
+var prezzoFinale;
 if (etaPasseggero < 18) {
     
     // sconto se il passeggero soddisfa i requisiti
